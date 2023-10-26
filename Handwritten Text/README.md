@@ -21,4 +21,4 @@ with an accuracy higher than 85%.
 
 1. Download the distribution zipped file from the drive link as follows: https://drive.google.com/file/d/1whEm0FMbuHiqOqz0EiRXCxKE0GEPkfBv/view?usp=sharing
 2. Unzip the file and run the App.exe file either directly or through a CMD instance.
-3. Test the model! Draw any single character on the blank canvas, predict your drawing or clear your result and try again. Keep in mind that the model recenters any drawing to account for error, but DOES NOT scale drawings. This means that your character drawing should be appropriately large for the canvas for the model to properly classify it.
+3. Test the model! Draw any single character on the blank canvas, predict your drawing or clear your result and try again. Keep in mind that the model recenters any drawing to account for error, but DOES NOT scale drawings. This means that your character drawing should be appropriately large for the canvas for the model to properly classify it. If errors are encountered, try keeping the console open during loading the program.
