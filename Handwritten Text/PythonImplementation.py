@@ -20,6 +20,10 @@ letterTrainData, letterTrainLabels = extract_training_samples('letters')
 digitTestData, digitTestLabels = extract_test_samples('digits')
 letterTestData, letterTestLabels = extract_test_samples('letters')
 
+# Add to the labels for letters in order to account for overlap
+letterTrainLabels = np.full(letterTrainLabels.shape, 10) + letterTrainLabels
+letterTestLabels = np.full(letterTestLabels.shape, 10) + letterTestLabels
+
 # Combine both digits with letters and permute randomly with same seeding
 trainData = np.concatenate([digitTrainData, letterTrainData])
 trainLabels = np.concatenate([digitTrainLabels, letterTrainLabels])
