@@ -15,6 +15,7 @@ with an accuracy higher than 85%.
 4. AppUIPy.py - Contains the python version of the AppUI.ui file, includes instantiations of UI components.
 5. PythonImplementation.py - Creates the training model that is used within this project. Includes functions for kernelization of data, alongside the importation of a dataset from EMNIST. The model is exported from here and imported into App.py for user interface use.
 6. svmModel.pkl (not included directly) - The model file that is exported from the PythonImplementation.py file. This file must be downloaded from the drive link included below as its file size exceeds that allowed in GitHub.
+7. App.exe (not included directly) - The executable file that is created using PyInstaller, this file must also be downloaded as part of a zip from the google drive link.
 
 **Instructions for Running:**
 
