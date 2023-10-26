@@ -69,7 +69,7 @@ def preprocess(image_path):
     resized = grayscale.resize((28,28)) # Resize to 28x28
     imageArray = np.array(resized) # Make into numpy array
     imageArray = np.full((28, 28), 255) - imageArray # Convert values to those used in Emnist
-    print(imageArray) # Print test
+    # print(imageArray) # Print test
     imageArray = centerImage(imageArray)
 
     featuremap = kernelizeSingle(imageArray) # Kernelize the input array
@@ -127,7 +127,7 @@ class MainWindow(QMainWindow):
         if (event.button() == Qt.LeftButton):
             self.lastPoint = event.pos()
             self.drawing = True
-            print('Mouse Pressed')
+            # print('Mouse Pressed')
         
     # Mouse move function / event
     def mouseMoveEvent(self, event):
@@ -173,9 +173,12 @@ class MainWindow(QMainWindow):
 
         # Display value in label
         self.PredictionValue.setText(label_dict[str(prediction)])
+        print('Value Predicted as: ', label_dict[str(prediction)])
 
 
 if __name__ == "__main__":
+    print('Loading UI...')
+    
     app = QApplication(sys.argv)
     mainWindow = MainWindow()
     mainWindow.show()
